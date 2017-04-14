@@ -1,0 +1,18 @@
+name: "Prabu Dzaky"
+markdown: kramdown
+exclude: ["node_modules", "gulpfile.js", "package.json", ".vscode", "hideme"]
+permalink: /:categories/:title/
+description: "Prabu Dzaky's Portofolio"
+
+source: development     # Default: .
+destination: production # Default: _site
+
+owner:
+  name: Prabu Dzaky
+  email: prabu.dyp@gmail.com
+  twitter: twitter.com/prabudzak
+  facebook: fb.com/prabudzak
+  github: github.com/prabudzak
+  gitlab: https://gitlab.com/PrabuDzak
+  linkedin: https://www.linkedin.com/in/prabu-dzaky-47a1a4127/
+  steam: http://steamcommunity.com/id/TheRealBoobs/

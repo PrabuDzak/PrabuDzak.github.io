@@ -1,0 +1,18 @@
+.card {
+  display: block;
+  // width: 95px;
+  // min-height: 95px;
+  background: #EF5350;
+  padding: 1rem;
+  transition: all 250ms ease;
+  @include shadow(1);
+  &:hover,
+  &:focus {
+    @include shadow(4);
+    transform: translateY(-5px);
+  }
+  &:active {
+    @include shadow(3);
+    transform: translateY(-2px);
+  }
+}

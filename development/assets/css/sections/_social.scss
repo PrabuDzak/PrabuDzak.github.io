@@ -1,0 +1,28 @@
+section.social{
+
+  .social-link{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    text-align: center;
+    color: #aaa;
+    height: 100px;
+    line-height: 100px;
+    font-size: 42px;
+    background: none;
+    box-shadow: 2px 0 0 0 $color-grey-3;
+
+    &:hover{
+      color: #eee;
+      transition: 400ms all ease;
+    }
+
+    &:hover.twitter  { background: #00b0ef; }
+    &:hover.github   { background: #0084c5; }
+    &:hover.linkedin { background: #0082b2; }
+    &:hover.steam    { background: #171a21; }
+    &:hover.facebook { background: #265999; }
+    &:hover.gitlab   { background: #ff7600; }
+    &:hover.mail     { background: #cd201f; }
+  }
+}

@@ -1,0 +1,39 @@
+button, a.btn, label.btn{
+  border: none;
+  padding: 8px 40px;
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+  cursor: pointer;
+
+  &.space-top{
+    margin-top: 50px;
+  }
+
+  &.space-left{
+    margin-left: 25px;
+  }
+
+  &.space-bottom{
+    margin-bottom: 80px;
+  }
+
+  // Theme
+  &.btn-gold{
+    &.wire{
+      border: 2px solid white;
+    
+      &:hover{
+        border-color: $color-gold-1;
+      }
+    }
+
+    &.solid{
+      background: $color-gold-1;
+
+      &:hover{
+
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+form{
+
+  input[type="text"], input[type="password"]{
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: 2px solid $color-grey-5;
+    border-radius: 4px;
+    padding: 8px 11px;
+
+    &:focus{
+      outline: none;
+      border-color: $color-gold-1;
+    }
+  }
+
+  input[type="text"] + ul.suggestion-box{
+      padding: 0;
+      display: none;
+
+      > li{
+        list-style-type: none;
+      }
+  }
+
+  input[type="text"]:focus + ul.suggestion-box{
+    display: block;
+  }
+
+  label{
+    display: block;
+    font-family: $paragraph-font;
+    margin: 12px 0;
+  }
+
+  textarea{
+    resize: vertical;
+  }
+
+  .button-wrap{
+    margin: 20px 10px;
+  }
+}

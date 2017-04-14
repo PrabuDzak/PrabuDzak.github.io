@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Fjalla+One|Hind:600');
+
+$navigation-font: 'Inconsolata', sans-serif; 
+$header-font: 'Fjalla One', sans-serif; 
+$paragraph-font: 'Inconsolata', monospace;
+
+$mono: 'Inconsolata', monospace;
+
+$screen-wide: 1200px;
+$screen-large: 1024px;
+$screen-medium: 800px;
+$screen-small: 425px;
+
+$color-white: #c0c0c0;
+$color-black: #181a1c;
+
+$color-orange-1: #e9a45a;
+$color-orange-2: #efbc84;
+
+$color-gold-1: #cca240;
+
+// material grey
+$color-grey-0 :#FAFAFA;
+$color-grey-1 :#F5F5F5;
+$color-grey-2 :#EEEEEE;
+$color-grey-3 :#E0E0E0;
+$color-grey-4 :#BDBDBD;
+$color-grey-5 :#9E9E9E;
+$color-grey-6 :#757575;
+$color-grey-7 :#616161;
+$color-grey-8 :#424242;
+$color-grey-9 :#212121;
+
+nav{
+  font-family: $navigation-font;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: $header-font;
+}
+
+section {
+
+  p, li{
+    font-family: $paragraph-font;
+  }
+}

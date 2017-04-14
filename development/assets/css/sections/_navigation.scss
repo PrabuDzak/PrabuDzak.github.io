@@ -1,0 +1,17 @@
+nav.site-nav{
+  color: #000;
+
+  ul.site-links{
+    
+    > li{
+      
+      &::before{
+        content: '|';
+      }
+
+      &:last-of-type::after{
+        content: '|';
+      }
+    }
+  }
+}

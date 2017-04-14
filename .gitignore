@@ -1,0 +1,5 @@
+.vscode
+.idea
+node_modules
+[Pp]roduction
+main.css

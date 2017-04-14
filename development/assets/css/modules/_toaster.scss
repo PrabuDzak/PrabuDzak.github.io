@@ -1,0 +1,28 @@
+.toaster{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9002;
+  overflow: hidden;
+  max-width: 400px;
+  max-height: 100vh;
+}
+
+.toast{
+  text-align: right;
+  max-width: 320px;
+  
+  .text{
+    display: inline-block;
+    background: rgba(17,17,17, 0.5);
+    color: #ddd;
+    border-radius: 15px;
+    margin: 10px 20px;
+    padding: 20px 30px;
+  }
+  
+  &.remove{
+    transition: all 250ms ease-in-out;
+    transform: translatex(400px);
+  }
+}

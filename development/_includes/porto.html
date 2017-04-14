@@ -1,0 +1,12 @@
+<section class="porto" id="portofolio">
+  <h1>PORTOFOLIO</h1>
+  <div class="container">
+    <div class="porto-wrap flex flex--flow-row-wrap">
+      {% for post in site.categories.portofolio %}
+        <a href="{{post.url}}" class="portofolio col-33 md-50 sm-100">
+          <div class="thumbnail" data-title="{{post.title}}" style="background-image:url({{post.thumbnail}})"></div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,75 @@
+section.intro{
+  $main-color: $color-grey-1;
+
+  background-image: url("/assets/img/Bob4.png"), linear-gradient($main-color, $main-color);
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+
+  .content{
+
+    .left{
+      width: 60%;
+      background: rgba($main-color, 0.4);
+      min-height: 500px;
+      @include flex-maximum-center;
+
+      @media (max-width: $screen-medium){
+        width: 100%;
+        background: rgba($color-grey-1, 0.8);
+      }
+
+      @media (min-width: $screen-small){
+        min-height: 100vh;
+      }
+    }
+
+    .right{
+
+    }
+
+    .introduction{
+      font-family: $mono;
+      font-weight: 100;
+      text-align: center;
+      padding: 20px;
+      font-size: 20px;
+      
+      .line{
+        @media(max-width: $screen-medium){
+          & > div {
+            display: inline-block;
+          }
+        }
+      }
+
+      .name{
+        font-family: 'Hind', serif;
+        font-weight: 600;
+        font-size: 4em;
+        color: hsl(350, 85, 63);
+      }
+
+      span.lenny{
+        font-family: sans-serif;
+        
+        &::after{
+          content: '~(°▽°~)(~°▽°)~';
+        }
+      }
+
+      .email a{
+        text-decoration: none;
+        color: inherit;
+
+      }
+      .email:hover a{
+        text-decoration: underline;
+      }
+    }
+
+    .fade{
+      color: $color-grey-4;
+    }
+  }
+}
