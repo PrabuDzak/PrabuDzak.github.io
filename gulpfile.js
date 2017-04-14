@@ -5,8 +5,8 @@ var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var ftp         = require('vinyl-ftp');
 
-var devPath    = 'development/';
-var buildPath  = 'production/';
+var devPath    = './';
+var buildPath  = '_site/';
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
