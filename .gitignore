@@ -2,4 +2,5 @@
 .idea
 node_modules
 [Pp]roduction
+_site
 main.css

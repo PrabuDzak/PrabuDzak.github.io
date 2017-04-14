@@ -4,9 +4,6 @@ exclude: ["node_modules", "gulpfile.js", "package.json", ".vscode", "hideme"]
 permalink: /:categories/:title/
 description: "Prabu Dzaky's Portofolio"
 
-source: development     # Default: .
-destination: production # Default: _site
-
 owner:
   name: Prabu Dzaky
   email: prabu.dyp@gmail.com
