@@ -34,9 +34,9 @@
      showgrid="false"
      inkscape:current-layer="layer6"
      inkscape:document-units="px"
-     inkscape:cy="298.3463"
-     inkscape:cx="302.95417"
-     inkscape:zoom="0.93290363"
+     inkscape:cy="153.67726"
+     inkscape:cx="419.65465"
+     inkscape:zoom="1.8658073"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -112,8 +112,10 @@
          y="42.01593" />
     </g>
     <g
-       id="g3816"
-       transform="translate(0,42.445949)">
+       id="button--L2"
+       transform="translate(0,42.445949)"
+       inkscape:label="#g3816"
+       onclick="">
       <path
          inkscape:connector-curvature="0"
          id="path5019-6"
@@ -240,8 +242,10 @@
       </g>
     </g>
     <g
-       id="g4013"
-       transform="translate(0,42.445949)">
+       id="button--triangle"
+       transform="translate(0,42.445949)"
+       inkscape:label="#g4013"
+       onclick="">
       <path
          inkscape:connector-curvature="0"
          id="path5029-5"
@@ -376,7 +380,9 @@
       </g>
     </g>
     <g
-       id="g3622">
+       id="button--dpad-up"
+       inkscape:label="#g3622"
+       onclick="">
       <path
          inkscape:connector-curvature="0"
          id="path5017-2"
@@ -502,8 +508,10 @@
       </g>
     </g>
     <g
-       id="g4111"
-       transform="translate(0,42.445949)">
+       id="button--x"
+       transform="translate(0,42.445949)"
+       inkscape:label="#g4111"
+       onclick="">
       <path
          sodipodi:nodetypes="cccccccc"
          inkscape:connector-curvature="0"
@@ -621,19 +629,17 @@
       </g>
     </g>
     <g
-       id="g3533">
-      <path
-         inkscape:connector-curvature="0"
-         id="path5031-8"
-         d="m 345.19909,668.807 12.037,-5.811 0.4151,4.9809 93.8057,-22.4138 -2.4904,40.6768 48.1481,3.3206 0.8301,3.3205 168.1032,1.2453 -32.3754,66.4111 -143.199,-31.1302 -95.051,-34.4508 -24.9042,3.3206 0.4151,3.7356 -38.6015,-6.6411 z"
-         style="display:inline;fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       id="button--circle"
+       inkscape:label="#g3735"
+       onclick="">
       <g
          transform="translate(0,42.445949)"
          id="g4080">
         <path
+           sodipodi:nodetypes="ccccc"
            inkscape:connector-curvature="0"
            id="rect8067-0"
-           d="m 480.62259,652.71615 c 0,0 185.6058,1.5794 185.6058,1.5794 0,0 -30.9714,61.4674 -30.9714,61.4674 0,0 -158.0545,-40.3699 -158.0545,-40.3699 0,0 3.4201,-22.6769 3.4201,-22.6769"
+           d="m 480.62259,652.71615 185.6058,1.5794 -30.9714,61.4674 -158.85844,-35.01029 4.22404,-28.03651"
            style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:4.26915836;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
         <path
            style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -677,6 +683,12 @@
              d="m 865.59953,919.19724 c 0,0 12.87348,-32.67596 12.87348,-32.67596 0,0 13.08785,0.72337 13.08785,0.72337 0,0 -11.47544,27.3294 -11.47544,27.3294 0,0 19.35538,3.51976 19.35538,3.51976 0,0 -3.55285,7.67619 -3.55285,7.67619 0,0 -30.28842,-6.57276 -30.28842,-6.57276 0,0 0,0 0,0" />
         </g>
       </g>
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path3689"
+         d="M 497.12108,689.49158 484.52599,725.13299 361.52294,683.06005 Z"
+         style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <g
          transform="translate(0,42.445949)"
          id="g3972">
@@ -740,6 +752,11 @@
              id="tspan5127-1"
              sodipodi:role="line">ソーシャルメディア</tspan></text>
       </g>
+    </g>
+    <g
+       id="button--square"
+       inkscape:label="#g3711"
+       onclick="">
       <g
          transform="matrix(0.99541809,-0.09561811,0.09561811,0.99541809,-560.55273,402.44234)"
          id="g5153-4"
@@ -826,6 +843,12 @@
           </g>
         </g>
       </g>
+      <path
+         sodipodi:nodetypes="cccc"
+         style="fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 357.94563,666.90543 1.28759,33.85251 -45.43527,-14.77541 z"
+         id="path3691"
+         inkscape:connector-curvature="0" />
       <g
          transform="translate(0,42.445949)"
          id="g3966">
@@ -870,7 +893,7 @@
        height="527.96863"
        preserveAspectRatio="none"
        id="image4185"
-       x="39.652325"
-       y="377.61417" />
+       x="41.796169"
+       y="380.82993" />
   </g>
 </svg>

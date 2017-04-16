@@ -27,13 +27,46 @@
     </div>
   </div>
   <div class="persona" id="persona"></div>
-</section>
 
-<script>
-  var persona = Snap('#persona');
-  Snap.load('/assets/img/persona.svg', function(data){
-    persona.append(data);
-    persona.node.querySelector('svg').style.width = '100%';
-    persona.node.querySelector('svg').style.height = '100%';
-  });
-</script>
+  <!-- END -->
+
+  <style> 
+    .ps4-button{
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    var persona = Snap('#persona');
+    function gotoHref(str){
+      console.log(str);
+      window.location.href = str;
+    }
+    Snap.load('/assets/img/persona.svg', function(data){
+      persona.append(data);
+
+      var svg = persona.node.querySelector('svg');
+      svg.style.width = '100%';
+      svg.style.height = '100%';
+
+      var buttonList = [];
+
+      svg.getElementById('button--triangle').setAttribute('onclick', "gotoHref('#portofolio')");
+      svg.getElementById('button--square').setAttribute('onclick', "gotoHref('#about')");
+      svg.getElementById('button--circle').setAttribute('onclick', "gotoHref('#contact')");
+      svg.getElementById('button--x').setAttribute('onclick', "gotoHref('{{site.owner.resume}}')");
+      svg.getElementById('button--L2').setAttribute('onclick', "gotoHref('#about')");
+      svg.getElementById('button--dpad-up').setAttribute('onclick', "gotoHref('mailto:{{site.owner.email}}')");
+
+      buttonList.push(svg.getElementById('button--triangle'));
+      buttonList.push(svg.getElementById('button--square'));
+      buttonList.push(svg.getElementById('button--circle'));
+      buttonList.push(svg.getElementById('button--x'));
+      buttonList.push(svg.getElementById('button--dpad-up'));
+      buttonList.push(svg.getElementById('button--L2'));
+
+      for(var i = 0; i < buttonList.length; i++){
+        buttonList[i].classList.add('ps4-button');
+      }
+    });
+  </script>
+</section>
