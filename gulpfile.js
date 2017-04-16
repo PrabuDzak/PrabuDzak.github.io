@@ -3,7 +3,8 @@ var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
-var ftp         = require('vinyl-ftp');
+var replace     = require('gulp-string-replace');
+var sequence    = require('run-sequence');
 
 var devPath    = './';
 var buildPath  = '_site/';
@@ -25,8 +26,8 @@ gulp.task('jekyll-build', function (done) {
 /**
  * Rebuild Jekyll & do page reload
  */
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
-    browserSync.reload();
+gulp.task('jekyll-rebuild', function (cb) {
+    sequence('jekyll-build', 'svg', 'reload', cb)
 });
 
 /**
@@ -42,6 +43,10 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     });
 });
 
+gulp.task('reload', function(){
+    browserSync.reload();
+})
+
 /**
  * Compiling sass scss file to css  
  */
@@ -49,7 +54,6 @@ gulp.task('sass', function () {
     return gulp.src(devPath + 'assets/css/main.scss')
         .pipe(sass({
             includePaths: ['css'],
-            outputStyle: 'compressed',
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
@@ -59,12 +63,27 @@ gulp.task('sass', function () {
 });
 
 /**
+ * adding web absolute path to xlink
+ */
+gulp.task('svg', function(){
+    return gulp.src(devPath + 'assets/img/*.svg')
+        .pipe(replace('xlink:href="(.*)"', function(rep){
+            rep = rep.replace('/assets/img/', '');
+            rep = rep.replace('xlink:href="', 'xlink:href="/assets/img/');
+            return rep;
+        }))
+        .pipe(gulp.dest(buildPath + 'assets/img'))
+        .pipe(gulp.dest(devPath + 'assets/img'))
+})
+
+/**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
     gulp.watch(devPath + 'assets/css/**', ['sass']);
     gulp.watch(devPath + 'assets/js/**', ['jekyll-rebuild']);
+    gulp.watch(devPath + 'assets/img/**.svg', ['svg']);
     gulp.watch([devPath + '*.html', devPath + '_layouts/*.html'], ['jekyll-rebuild']);
     gulp.watch(devPath + '_posts/**/*.md', ['jekyll-rebuild']);
     gulp.watch([devPath + '_includes/**/*.html', devPath + '_includes/*.html' ], ['jekyll-rebuild']);

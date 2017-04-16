@@ -1,15 +1,29 @@
 section.intro{
   $main-color: $color-grey-1;
 
-  background-image: url("/assets/img/Bob4.png"), linear-gradient($main-color, $main-color);
+  position: relative;
+  background-color: $main-color;
   background-size: contain;
   background-position: bottom right;
   background-repeat: no-repeat;
 
+  .persona{
+    display: block;
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    right: 0;  
+  }
+
+  @media (max-width:$screen-medium){
+    .persona { display: none};
+    background-image: url("/assets/img/Bob4.png"), linear-gradient($main-color, $main-color);
+  }
+
   .content{
 
     .left{
-      width: 60%;
+      width: 50%;
       background: rgba($main-color, 0.4);
       min-height: 500px;
       @include flex-maximum-center;
