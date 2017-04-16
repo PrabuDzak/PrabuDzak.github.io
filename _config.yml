@@ -3,6 +3,7 @@ markdown: kramdown
 exclude: ["node_modules", "gulpfile.js", "package.json", ".vscode", "hideme"]
 permalink: /:categories/:title/
 description: "Prabu Dzaky's Portofolio"
+keyword: "Prabu, Dzaky, Yoga, Pradana, PrabuDzak, Prabu Dzaky"
 
 owner:
   name: Prabu Dzaky
