@@ -778,12 +778,24 @@ section > h1 {
   text-align: center; }
 
 section.intro {
-  background-image: url("/assets/img/Bob4.png"), linear-gradient(#F5F5F5, #F5F5F5);
+  position: relative;
+  background-color: #F5F5F5;
   background-size: contain;
   background-position: bottom right;
   background-repeat: no-repeat; }
+  section.intro .persona {
+    display: block;
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    right: 0; }
+  @media (max-width: 800px) {
+    section.intro {
+      background-image: url("/assets/img/Bob4.png"), linear-gradient(#F5F5F5, #F5F5F5); }
+      section.intro .persona {
+        display: none; } }
   section.intro .content .left {
-    width: 60%;
+    width: 50%;
     background: rgba(245, 245, 245, 0.4);
     min-height: 500px;
     display: -ms-flexbox;

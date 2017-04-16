@@ -23,7 +23,17 @@
       </div>
     </div>
     <div class="right">
-
+      
     </div>
   </div>
+  <div class="persona" id="persona"></div>
 </section>
+
+<script>
+  var persona = Snap('#persona');
+  Snap.load('/assets/img/persona.svg', function(data){
+    persona.append(data);
+    persona.node.querySelector('svg').style.width = '100%';
+    persona.node.querySelector('svg').style.height = '100%';
+  });
+</script>
