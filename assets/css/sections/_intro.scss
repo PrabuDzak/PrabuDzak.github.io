@@ -17,7 +17,7 @@ section.intro{
 
   @media (max-width:$screen-medium){
     .persona { display: none};
-    background-image: url("/assets/img/Bob4.png"), linear-gradient($main-color, $main-color);
+    background-image: url("/assets/img/Bob4--medium.png"), linear-gradient($main-color, $main-color);
   }
 
   .content{
