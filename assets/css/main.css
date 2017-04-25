@@ -851,7 +851,7 @@ section.intro {
     right: 0; }
   @media (max-width: 800px) {
     section.intro {
-      background-image: url("/assets/img/Bob4.png"), linear-gradient(#F5F5F5, #F5F5F5); }
+      background-image: url("/assets/img/Bob4--medium.png"), linear-gradient(#F5F5F5, #F5F5F5); }
       section.intro .persona {
         display: none; } }
   section.intro .content .left {
